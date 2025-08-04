@@ -1,0 +1,380 @@
+columns needed
+hf-info:
+
+ 'hf_info-datetim',
+ 'hf_info-team',
+ 'hf_info-hf_info_county',
+ 'hf_info-hf_info_sub_county',
+ 'hf_info-hf_name',
+ 'hf_info-hf_id',
+ 'hf_info-hf_type',
+ 'hf_info-gps_coord-Latitude',
+ 'hf_info-gps_coord-Longitude',
+ 'hf_info-gps_coord-Altitude',
+ 'hf_info-gps_coord-Accuracy',
+
+hf-infrstrctr:
+
+ 'hf_infrstrctr-hf_infrstrctr_elec',
+ 'hf_infrstrctr-hf_infrstrctr_wtr',
+ 'hf_infrstrctr-hf_infrstrctr_wgh_scal',
+ 'hf_infrstrctr-hf_infrstrctr_func_thmtr',
+ 'hf_infrstrctr-hf_infrstrctr_ntwrk_phne',
+
+hf-guideline charts:
+
+ 'hf_guid_chrts-hf_guid_chrts_guidln',
+ 'hf_guid_chrts-hf_guid_chrts_imci',
+ 'hf_guid_chrts-hf_guid_chrts_mal_mngt_buk',
+
+ 'hf_guid_chrts-hf_guid_chrts_alg_tx_chld',
+ 'hf_guid_chrts-hf_guid_chrts_al_dos_schdl',
+ 'hf_guid_chrts-hf_guid_chrts_mal_op_alg_adlt',
+ 'hf_guid_chrts-hf_guid_chrts_mal_op_alg_adlt_chld_new',
+ 'hf_guid_chrts-hf_guid_chrts_artsnt_iv_im_poster'
+
+staff trainings in regards to malaria treatment:
+combine into just 4 columns:
+1. total number 
+2. number with malaria case management training
+3. number with malaria rdt training
+4. number with imci training
+
+ 'staff_cas_mngt_trng-doc_tot_num',
+ 'staff_cas_mngt_trng-doc_num_mal_cm',
+ 'staff_cas_mngt_trng-doc_num_mal_rdt',
+ 'staff_cas_mngt_trng-doc_num_imci',
+ 'co_cas_mngt-co_tot_num',
+ 'co_cas_mngt-co_num_mal_cm',
+ 'co_cas_mngt-co_num_mal_rdt',
+ 'co_cas_mngt-co_num_imci',
+ 'nurs_cas_mngt-nurs_tot_num',
+ 'nurs_cas_mngt-nurs_num_mal_cm',
+ 'nurs_cas_mngt-nurs_num_mal_rdt',
+ 'nurs_cas_mngt-nurs_num_imci',
+ 'chew_cas_mngt-chew_tot_num',
+ 'chew_cas_mngt-chew_num_mal_cm',
+ 'chew_cas_mngt-chew_num_mal_rdt',
+ 'chew_cas_mngt-chew_num_imci',
+ 'oth_cas_mngt-othrs_tot_num',
+ 'oth_cas_mngt-othrs_num_mal_cm',
+ 'oth_cas_mngt-othrs_num_mal_rdt',
+ 'oth_cas_mngt-othrs_num_imci',
+
+ 'oth_cas_mngt-oth_spec_trng',
+
+lab staff trainings:
+combine into 3 columns:
+1. cadre performing microscopy
+1. number trained on microscopy
+2. number trained on malaria rapid diagnostic test (mrdt)
+ 
+ 'staff_lab_mngt_trng-staff_lab_mngt_trng_title',
+ 'staff_lab_mngt_trng-lab_trng_num',
+ 'staff_lab_mngt_trng-lab_techlgst_prfrm_micrscpy',
+ 'staff_lab_mngt_trng-lab_techlgst_train_micrscpy',
+ 'staff_lab_mngt_trng-lab_techlgst_train_mrdt',
+ 'staff_lab_mngt_trng-lab_tech_prfrm_micrscpy',
+ 'staff_lab_mngt_trng-lab_tech_train_micrscpy',
+ 'staff_lab_mngt_trng-lab_tech_train_mrdt',
+ 'staff_lab_mngt_trng-oth_cadre_spec_prfrm_micrscpy',
+ 'staff_lab_mngt_trng-oth_cadre_prfrm_micrscpy',
+ 'staff_lab_mngt_trng-oth_cadre_train_micrscpy',
+
+ 'staff_lab_mngt_trng-oth_cadre_train_mrdt', - fill nans with 0 for this col.
+
+ 'staff_lab_mngt_trng-cadr_mal_mcrscpy_tdy',
+ 'staff_lab_mngt_trng-cadr_mal_rdt_tdy',
+
+
+pharmacy staff trainings:
+combine into 2 columns:
+1. total number of staff of specific cadre
+2. number trained on drug dispensing.
+
+ 'drug_dispns_trng-drug_dispns_trng_title',
+ 'drug_dispns_trng-drug_dispns_trng_num',
+ 'drug_dispns_trng-pharm_tech_num',
+ 'drug_dispns_trng-pharm_tech_num_trnd',
+ 'drug_dispns_trng-pharm_num',
+ 'drug_dispns_trng-pharm_num_trnd',
+ 'drug_dispns_trng-nurse_num',
+ 'drug_dispns_trng-nurse_num_trnd',
+ 'drug_dispns_trng-chews_num',
+ 'drug_dispns_trng-chews_num_trnd',
+ 'drug_dispns_trng-oth_cadre_spec_trnd_pharm',
+ 'drug_dispns_trng-other_spec_num',
+ 'drug_dispns_trng-other_spec_num_trnd',
+ 'drug_dispns_trng-cadr_dispns_tday',
+
+
+practices followed in malaria microscopy diagnosis :
+
+ 'avail_mal_dx-mal_mcrscpy_rutin',
+ 'avail_mal_dx-mal_mcrscpy_tday',
+ 'avail_mal_dx-blood_smear',
+ 'avail_mal_dx-staining',
+ 'avail_mal_dx-parsit_count',
+ 'avail_mal_dx-parsit_count_rutin',
+ 'avail_mal_dx-parsit_count_rutin_oth_spec',
+ 'avail_mal_dx-parasit_specis_rutin',
+ 'avail_mal_dx-parasit_guid_avail',
+ 'avail_mal_dx_sops-all8_sop_avail',
+ 'avail_mal_dx_sops-sop1',
+ 'avail_mal_dx_sops-sop2',
+ 'avail_mal_dx_sops-sop3',
+ 'avail_mal_dx_sops-sop4',
+ 'avail_mal_dx_sops-sop5',
+ 'avail_mal_dx_sops-sop6',
+ 'avail_mal_dx_sops-sop7',
+ 'avail_mal_dx_sops-sop8',
+
+availability of malaria microscopy slides, reagents:
+
+combine into 2 columns:
+1. available that day
+2. available in the last quarter.
+
+ 'asses_avail_mcrscpy_slids-mcrscpy_slds_tday',
+ 'asses_avail_mcrscpy_slids-mcrscpy_slds_so_lst_qrt',
+ 'asses_avail_mcrscpy_slids-imms_oil_tday',
+ 'asses_avail_mcrscpy_slids-imms_oil_so_lst_qrt',
+ 'asses_avail_mcrscpy_slids-lncts_tday',
+ 'asses_avail_mcrscpy_slids-lncts_so_lst_qrt',
+ 'asses_avail_mcrscpy_slids-methnl_tday',
+ 'asses_avail_mcrscpy_slids-methnl_so_lst_qrt',
+ 'asses_avail_mcrscpy_slids-gimsa_tday',
+ 'asses_avail_mcrscpy_slids-gimsa_so_lst_qrt',
+
+
+Available brands of malaria rapid diagnostic test kits(mrdts):
+combine into 3 columns:
+1. brand names
+2. number of non expired kits per brand
+3. number of expired kits pre brand
+
+ 'mrdt_tday-rdt1_name',
+ 'mrdt_tday-rdt1_non_exp',
+ 'mrdt_tday-rdt1_exp',
+ 'mrdt_tday-rdt2_name',
+ 'mrdt_tday-rdt2_non_exp',
+ 'mrdt_tday-rdt2_exp',
+
+ 'mrdt_tday-sorc_rdt', - source of rdts
+ 'mrdt_tday-sorc_rdt_oth'
+
+available stock of AL medication and mosquito nets(LLINS) at the facility:
+combine into 11 columns:
+Stock available at the store:
+1. physical count at the store
+2. store bincard present?
+3. store bincard up to date?
+4. recorded number in store bincard
+
+stock available at the dispensing area:
+5. physical count at the dispensing area
+6. tot_phys to patients
+7. total physical reported
+
+stock recorded in daily activity register:
+8. recorded count in daily activity register(dar)
+9. tot_record in dar
+10. tot_record_report in dar
+
+11.expired quantities
+
+
+'avail_al_med_tday1-phsy_count_non_exp-al_6_disp_physc_count_stor',
+ 'avail_al_med_tday1-phsy_count_non_exp-al_12_disp_physc_count_stor',
+ 'avail_al_med_tday1-phsy_count_non_exp-al_18_physc_count_stor',
+ 'avail_al_med_tday1-phsy_count_non_exp-al_24_physc_count_stor',
+ 'avail_al_med_tday1-phsy_count_non_exp-llin_physc_count_stor',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-avail_nonexp_recrd_count',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_al6_disp',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_upt_dat_al6_disp',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-al_6_disp_recrd_count_card',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_al12_disp',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_upt_dat_al12_disp',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-al_12_disp_recrd_count_card',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_al18',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_upt_dat_al18',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-al_18_recrd_count_card',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_al24',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_upt_dat_al24',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-al_24_recrd_count_card',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_llin',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-stck_bin_crd_upt_dat_llin',
+ 'avail_al_med_tday1-record_count_non_exp_bincard-llin_recrd_count_card',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-phsy_count_non_exp_dispens_area_note',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_6_disp_physc_count_dsp_ar',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_12_disp_physc_count_dsp_ar',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_18_physc_count_dsp_ar',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_24_physc_count_dsp_ar',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_6_disp_tot_phys',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_6_disp_tot_phys_report',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_12_disp_tot_phys',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_12_disp_tot_phys_report',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_18_tot_phys',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_18_tot_phys_report',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_24_tot_phys',
+ 'avail_al_med_tday1-phsy_count_non_exp_dispens_area-al_24_tot_phys_report',
+ 'avail_al_med_tday1-record_count_non_exp_dar-record_count_non_exp_dar_note',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_6_disp_recrd_count_dar',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_12_disp_recrd_count_dar',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_18_recrd_count_dar',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_24_recrd_count_dar',
+ 'avail_al_med_tday1-record_count_non_exp_dar-llins_anc_reg',
+ 'avail_al_med_tday1-record_count_non_exp_dar-llins_cwc_reg',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_6_disp_tot_recod',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_6_disp_tot_recod_report',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_12_disp_tot_recod',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_12_disp_tot_recod_report',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_18_tot_recod',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_18_tot_recod_report',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_24_tot_recod',
+ 'avail_al_med_tday1-record_count_non_exp_dar-al_24_tot_recod_report',
+ 'avail_al_med_tday1-record_count_non_exp_dar-llin_tot_recod',
+ 'avail_al_med_tday1-record_count_non_exp_dar-llin_tot_recod_report',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_note',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_disp_al6',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_disp_al12',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_al18',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_al24',
+ 'avail_al_med_tday1-avail_exp_qnty1-avail_exp_qnty_llins',
+
+
+available recording tools:
+ 'tools_frms_avail-tools_frms_avail_tilte',
+ 'tools_frms_avail-dar_avail',
+ 'tools_frms_avail-dar_uptdat',
+ 'tools_frms_avail-msf_avail',
+ 'tools_frms_avail-msf_uptdat',
+ 'tools_frms_avail-pvers_avail',
+ 'tools_frms_avail-pvers_rprt',
+
+other antimalarial drugs available in stock:
+combine into:
+1. Non expired quantity
+2. Expired quantity 
+
+'oth_antmal_avail-chlrqn_tabs_nonexp',
+ 'oth_antmal_avail-chlrqn_syrp_nonexp',
+ 'oth_antmal_avail-chlrqn_inj_nonexp',
+ 'oth_antmal_avail-sp_tabs_nonexp',
+ 'oth_antmal_avail-sp_syrp_nonexp',
+ 'oth_antmal_avail-amdqn_tabs_nonexp',
+ 'oth_antmal_avail-amdqn_syrp_nonexp',
+ 'oth_antmal_avail-quinn_tabs_nonexp',
+ 'oth_antmal_avail-quinn_inj_nonexp',
+ 'oth_antmal_avail-artsnt_inj_nonexp',
+ 'oth_antmal_avail-oth_am_nonexp',
+ 'oth_antmal_avail-oth_am_nam_nonexp',
+ 'oth_antmal_avail_exp-oth_antmal_avail_exp_title',
+ 'oth_antmal_avail_exp-chlrqn_tabs_exp',
+ 'oth_antmal_avail_exp-chlrqn_syrp_exp',
+ 'oth_antmal_avail_exp-chlrqn_inj_exp',
+ 'oth_antmal_avail_exp-sp_tabs_exp',
+ 'oth_antmal_avail_exp-sp_syrp_exp',
+ 'oth_antmal_avail_exp-amdqn_tabs_exp',
+ 'oth_antmal_avail_exp-amdqn_syrp_exp',
+ 'oth_antmal_avail_exp-quinn_tabs_exp',
+ 'oth_antmal_avail_exp-quinn_inj_exp',
+ 'oth_antmal_avail_exp-artsnt_inj_exp',
+ 'oth_antmal_avail_exp-oth_am_exp',
+ 'oth_antmal_avail_exp-oth_am_nam_exp',
+
+AL supplier:
+ 'qnty_al_ord_recvd-al_spplr_kmsa',
+ 'qnty_al_ord_recvd-al_spplr_meds',
+ 'qnty_al_ord_recvd-al_spplr_oth',
+ 'qnty_al_ord_recvd-al_spplr_oth_spec'
+
+quantity of medication ordered and quantity received:
+Combine into:
+1. Ordered via push system
+2. received via push system
+3. ordered via pull system
+4. received via pull system
+
+ 'al_pull_systm_title-al_pull_systm',
+ 'al_pull_systm_title-qnty_rec_ord_al',
+ 'al_pull_systm_title-al_6_ord',
+ 'al_pull_systm_title-al_6_recv',
+ 'al_pull_systm_title-al_12_ord',
+ 'al_pull_systm_title-al_12_recv',
+ 'al_pull_systm_title-al_18_ord',
+ 'al_pull_systm_title-al_18_recv',
+ 'al_pull_systm_title-al_24_ord',
+ 'al_pull_systm_title-al_24_recv',
+ 'al_pull_systm_title-date_lst_ord_dlvrd',
+ 'al_push_systm_title-al_push_systm',
+ 'al_push_systm_title-al_push_systm_qnty',
+ 'al_push_systm_title-al_6_push',
+ 'al_push_systm_title-al_12_push',
+ 'al_push_systm_title-al_18_push',
+ 'al_push_systm_title-al_24_push',
+ 'al_push_systm_title-date_push_dlvrd',
+
+
+total number of days from oct-dec with medication stockout:
+combine into 3:
+1. number of days with stock out in oct
+2. number of days with stock out in dec
+3. number of days with stock out in nov
+
+'stck_out_log-stck_out_log_title',
+ 'stck_out_log-al_6_tab_all_oct',
+ 'stck_out_log-al_6_tab_oct',
+ 'stck_out_log-al_6_tab_all_nov',
+ 'stck_out_log-al_6_tab_nov',
+ 'stck_out_log-al_6_tab_all_dec',
+ 'stck_out_log-al_6_tab_dec',
+ 'stck_out_log_al12-al_12_tab_all_oct',
+ 'stck_out_log_al12-al_12_tab_oct',
+ 'stck_out_log_al12-al_12_tab_all_nov',
+ 'stck_out_log_al12-al_12_tab_nov',
+ 'stck_out_log_al12-al_12_tab_all_dec',
+ 'stck_out_log_al12-al_12_tab_dec',
+ 'stck_out_log_al18-al_18_tab_all_oct',
+ 'stck_out_log_al18-al_18_tab_oct',
+ 'stck_out_log_al18-al_18_tab_all_nov',
+ 'stck_out_log_al18-al_18_tab_nov',
+ 'stck_out_log_al18-al_18_tab_all_dec',
+ 'stck_out_log_al18-al_18_tab_dec',
+ 'stck_out_log_al24-al_24_tab_all_oct',
+ 'stck_out_log_al24-al_24_tab_oct',
+ 'stck_out_log_al24-al_24_tab_all_nov',
+ 'stck_out_log_al24-al_24_tab_nov',
+ 'stck_out_log_al24-al_24_tab_all_dec',
+ 'stck_out_log_al24-al_24_tab_dec',
+ 'stck_out_log_llins_tab-llins_all_oct',
+ 'stck_out_log_llins_tab-llins_oct',
+ 'stck_out_log_llins_tab-llins_all_nov',
+ 'stck_out_log_llins_tab-llins_nov',
+ 'stck_out_log_llins_tab-llins_all_dec',
+ 'stck_out_log_llins_tab-llins_dec',
+ 'stck_out_sp_tab-sp_tab_all_oct',
+ 'stck_out_sp_tab-sp_tab_oct',
+ 'stck_out_sp_tab-sp_tab_all_nov',
+ 'stck_out_sp_tab-sp_tab_nov',
+ 'stck_out_sp_tab-sp_tab_all_dec',
+ 'stck_out_sp_tab-sp_tab_dec',
+ 'stck_out_log_qn_tab-qn_tab_all_oct',
+ 'stck_out_log_qn_tab-qn_tab_oct',
+ 'stck_out_log_qn_tab-qn_tab_all_nov',
+ 'stck_out_log_qn_tab-qn_tab_nov',
+ 'stck_out_log_qn_tab-qn_tab_all_dec',
+ 'stck_out_log_qn_tab-qn_tab_dec',
+ 'stck_out_log_qn_inj-qn_inj_all_oct',
+ 'stck_out_log_qn_inj-qn_inj_oct',
+ 'stck_out_log_qn_inj-qn_inj_all_nov',
+ 'stck_out_log_qn_inj-qn_inj_nov',
+ 'stck_out_log_qn_inj-qn_inj_all_dec',
+ 'stck_out_log_qn_inj-qn_inj_dec',
+ 'stck_out_log_art_inj-artsn_inj_all_oct',
+ 'stck_out_log_art_inj-artsn_inj_oct',
+ 'stck_out_log_art_inj-artsn_inj_all_nov',
+ 'stck_out_log_art_inj-artsn_inj_nov',
+ 'stck_out_log_art_inj-artsn_inj_all_dec',
+ 'stck_out_log_art_inj-artsn_inj_dec',
+
